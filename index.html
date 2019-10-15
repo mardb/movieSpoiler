@@ -13,6 +13,11 @@
   </head>
   <body>
     <img src="img/deathstar.png" />
+    <div class="spoiler-react-container">
+        <div class="spoiler-container spoiler-react" data-text="Han dies"></div>
+        <div class="spoiler-container spoiler-react" data-text="Kylo = Ben"></div>
+    </div>
+
     <p class="spoiler">
       <span>Darth Vader is Luke Skywalker's Father! Noooooooooooo!</span>
     </p>
@@ -21,5 +26,13 @@
     </p>
     <script src="./js/jquery-3.2.1.min.js"></script>
     <script src="js/app.js"></script>
+
+    <!-- Load React. -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  
+    <!-- Load our React component. -->
+    <script src="Spoiler.js"></script>
+
   </body>
 </html>

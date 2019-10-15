@@ -33,3 +33,27 @@ button {
   display: block;
   padding: 40px 20px;
 }
+.spoiler-react-container {
+  display: flex;
+  flex-direction: column;
+}
+.spoiler-react {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 17px;
+  background-color: #dae1e4;
+  border-radius: 5px;
+  color: #1d3c6a;
+  cursor: pointer;
+  width: 480px;
+  height: 100px;
+  text-align: center;
+}
+.spoiler-react p {
+  color: #1d3c6a;
+  margin-top: 0px;
+  padding-top: 39px;
+  padding-bottom: 33px;
+  font-size: 24px;
+}
