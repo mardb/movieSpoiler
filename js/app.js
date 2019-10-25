@@ -15,3 +15,13 @@ $('.spoiler').append($button);
 $('.spoiler span').hide();
 
 
+let text = '';
+$('.spoiler-input').keypress((e) => {
+  text = e.target.value;
+  if (e.which === 13) { // enter key
+    console.log('Enter key pressed.', text)
+    const $spoiler = $(`<div class="spoiler-container spoiler-react" data-text='` + text +`' />}`);
+    $('.spoiler-react-container').append($spoiler);
+    $('.spoiler-input').val('');
+  }
+});

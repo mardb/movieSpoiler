@@ -18,7 +18,6 @@ class Spoiler extends React.Component {
       "p",
       {
         onClick: () => {
-          console.log("clicked");
           this.setState({ revealed: !revealed });
         }
       },
@@ -29,7 +28,7 @@ class Spoiler extends React.Component {
 
 // Find all DOM containers, and render buttons into them.
 document.querySelectorAll(".spoiler-container").forEach(domContainer => {
-  // Read the comment ID from a data-* attribute.
+  // Read the text from a data-* attribute.
   const text = domContainer.dataset.text;
   ReactDOM.render(e(Spoiler, { text }), domContainer);
 });
